@@ -9,7 +9,7 @@ repositories {
 dependencies {
     // Three direct, non-test public deps so the scan detects >= 3 direct dependencies.
     // guava pulls a real transitive tree (failureaccess, listenablefuture, error_prone_annotations, ...).
-    api("com.google.guava:guava:33.4.6-jre")
+    api("com.google.guava:guava:33.8.0-android")
     implementation("org.apache.commons:commons-lang3:3.20.0")
     implementation("commons-io:commons-io:2.16.1")
     // Test-scope dep is excluded from the scan by default (gradle.ignoredConfigurations), so it does not
